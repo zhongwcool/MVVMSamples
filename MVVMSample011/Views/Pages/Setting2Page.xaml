@@ -5,8 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:MVVMSample011.ViewModels.Pages"
-    d:DataContext="{d:DesignInstance Type=vm:Setting2PageViewModel,
-                                     IsDesignTimeCreatable=True}"
+    d:DataContext="{d:DesignInstance Type=vm:Setting2PageViewModel, IsDesignTimeCreatable=True}"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Background="{DynamicResource SystemControlPageBackgroundChromeMediumLowBrush}"

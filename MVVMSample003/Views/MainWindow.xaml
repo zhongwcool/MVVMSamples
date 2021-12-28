@@ -4,12 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        xmlns:viewModels="clr-namespace:MVVMSample003.ViewModels"
+        xmlns:vm="clr-namespace:MVVMSample003.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow"
         Width="350"
         Height="250"
-        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel, IsDesignTimeCreatable=True}"
+        d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">
     <StackPanel>

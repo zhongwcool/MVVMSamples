@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        xmlns:viewModels="clr-namespace:MVVMSample011.ViewModels"
+        xmlns:vm="clr-namespace:MVVMSample011.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow"
         Width="400"
@@ -12,7 +12,7 @@
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">
     <Window.DataContext>
-        <viewModels:MainWindowViewModel />
+        <vm:MainWindowViewModel />
     </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>

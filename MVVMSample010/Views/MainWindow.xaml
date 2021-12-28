@@ -5,12 +5,12 @@
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        xmlns:viewModels="clr-namespace:MVVMSample010.ViewModels"
+        xmlns:vm="clr-namespace:MVVMSample010.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow"
         Width="300"
         Height="350"
-        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel, IsDesignTimeCreatable=True}"
+        d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">
     <i:Interaction.Triggers>
