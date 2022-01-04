@@ -7,10 +7,8 @@
         xmlns:vm="clr-namespace:MVVMSample008.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow"
-        Width="450"
-        Height="350"
-        d:DataContext="{d:DesignInstance vm:MainWindowViewModel,
-                                     IsDesignTimeCreatable=True}"
+        Width="450" Height="350"
+        d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">
     <Grid>
@@ -31,8 +29,7 @@
                 Width="180"
                 Margin="10,0,10,15"
                 HorizontalAlignment="Left"
-                Maximum="120"
-                Minimum="0"
+                Maximum="120" Minimum="0"
                 SpinButtonPlacementMode="Inline"
                 Value="{Binding Age}" />
 

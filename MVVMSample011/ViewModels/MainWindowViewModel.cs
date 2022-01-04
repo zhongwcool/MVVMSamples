@@ -17,19 +17,19 @@ public class MainWindowViewModel : ObservableObject
     public PageViewModelBase CurrentPage
     {
         get => _currentPage;
-        set
+        private set
         {
             SetProperty(ref _currentPage, value);
 
-            PageBackCommand?.NotifyCanExecuteChanged();
-            PageNextCommand?.NotifyCanExecuteChanged();
+            PageBackCommand.NotifyCanExecuteChanged();
+            PageNextCommand.NotifyCanExecuteChanged();
         }
     }
 
-    public StartPageViewModel StartPage { get; }
-    public Setting1PageViewModel Setting1Page { get; }
-    public Setting2PageViewModel Setting2Page { get; }
-    public EndPageViewModel EndPage { get; }
+    private StartPageViewModel StartPage { get; }
+    private Setting1PageViewModel Setting1Page { get; }
+    private Setting2PageViewModel Setting2Page { get; }
+    private EndPageViewModel EndPage { get; }
 
     /// <summary>
     ///     Page management
@@ -50,10 +50,10 @@ public class MainWindowViewModel : ObservableObject
         _pages.Add(Setting2Page = new Setting2PageViewModel());
         _pages.Add(EndPage = new EndPageViewModel());
 
-        CurrentPage = StartPage;
-
         PageBackCommand = new RelayCommand(PageBackExecute, PageBackCanExecute);
         PageNextCommand = new RelayCommand(PageNextExecute, PageNextCanExecute);
+
+        CurrentPage = StartPage;
     }
 
     /// <summary>

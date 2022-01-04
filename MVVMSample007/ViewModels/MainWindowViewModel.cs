@@ -13,7 +13,7 @@ public class MainWindowViewModel : ObservableObject
     /// <summary>
     ///     Processing flag
     /// </summary>
-    public bool IsBusy
+    private bool IsBusy
     {
         get => _isBusy;
         set => SetProperty(ref _isBusy, value);

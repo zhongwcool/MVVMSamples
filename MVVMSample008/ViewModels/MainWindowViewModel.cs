@@ -43,7 +43,7 @@ public class MainWindowViewModel : ObservableValidator
     /// </summary>
     public MainWindowViewModel()
     {
-        ValidateCommand = new RelayCommand(() => { ValidateAllProperties(); });
+        ValidateCommand = new RelayCommand(ValidateAllProperties);
 
         ClearErrorCommand = new RelayCommand(() => { ClearErrors(); });
     }

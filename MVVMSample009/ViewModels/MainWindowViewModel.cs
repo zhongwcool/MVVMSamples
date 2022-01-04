@@ -16,6 +16,8 @@ public class MainWindowViewModel : ObservableObject
 
     public MainWindowViewModel()
     {
-        Text1 = IOC.Default.GetService<IFoo>().GetBar();
+        var foo = IOC.Default.GetService<IFoo>();
+        if (null == foo) return;
+        Text1 = foo.GetBar();
     }
 }

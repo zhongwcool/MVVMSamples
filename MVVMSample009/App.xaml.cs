@@ -13,9 +13,8 @@ public partial class App : Application
     public App()
     {
         IOC.Default.ConfigureServices(
-            new ServiceCollection()
-                .AddSingleton<IFoo, Foo>()
-                .BuildServiceProvider());
+            new ServiceCollection().AddSingleton<IFoo, Foo>().BuildServiceProvider()
+        );
 
         //IServiceCollection sc = new ServiceCollection();
         //sc.AddSingleton<IFoo, Foo>();
