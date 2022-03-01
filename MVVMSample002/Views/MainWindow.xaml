@@ -6,9 +6,7 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:vm="clr-namespace:MVVMSample002.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow"
-        Width="350"
-        Height="200"
+        Title="MainWindow" Width="350" Height="200"
         d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         ui:WindowHelper.UseModernWindowStyle="True"
         IsEnabled="{Binding IsFree}">

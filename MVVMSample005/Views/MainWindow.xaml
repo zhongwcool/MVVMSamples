@@ -6,8 +6,7 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:vm="clr-namespace:MVVMSample005.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Width="350"
-        Height="250"
+        Title="MainWindow" Width="350" Height="250"
         d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">

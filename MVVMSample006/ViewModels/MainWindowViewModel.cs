@@ -14,7 +14,7 @@ public class MainWindowViewModel : ObservableObject
     /// <summary>
     ///     Processing flag
     /// </summary>
-    public bool IsBusy
+    private bool IsBusy
     {
         get => _isBusy;
         set => SetProperty(ref _isBusy, value);
@@ -68,7 +68,7 @@ public class MainWindowViewModel : ObservableObject
         _model = new HeavyWorkModel();
 
         var p = new Progress<ProgressInfo>();
-        p.ProgressChanged += (sender, e) =>
+        p.ProgressChanged += (_, e) =>
         {
             ProgressValue = e.ProgressValue;
             ProgressText = e.ProgressText;

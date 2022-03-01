@@ -14,7 +14,7 @@ public class HeavyWorkModel
             {
                 token.ThrowIfCancellationRequested();
 
-                await Task.Delay(50);
+                await Task.Delay(50, token);
 
                 progress.Report(new ProgressInfo(i, $"{i + 1} cases processed."));
             }
