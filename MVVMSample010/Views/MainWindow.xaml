@@ -44,6 +44,6 @@
             <ComboBoxItem>英雄</ComboBoxItem>
         </ComboBox>
 
-        <Slider Grid.Row="3" />
+        <Slider Grid.Row="3" Value="50" />
     </Grid>
 </Window>

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net48</TargetFramework>
+        <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>disable</Nullable>
         <UseWPF>true</UseWPF>
         <LangVersion>10</LangVersion>
@@ -17,7 +17,7 @@
             <Version>7.1.2</Version>
         </PackageReference>
         <PackageReference Include="ModernWpfUI">
-            <Version>0.9.4</Version>
+            <Version>0.9.5</Version>
         </PackageReference>
     </ItemGroup>
 
