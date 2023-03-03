@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using Microsoft.Toolkit.Mvvm.Messaging;
+using CommunityToolkit.Mvvm.Messaging;
 using MVVMSample003.ViewModels;
 
 namespace MVVMSample003.Views;

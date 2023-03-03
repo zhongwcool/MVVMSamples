@@ -1,6 +1,6 @@
 # MVVMSample001
 
-`MVVM Toolkit` (`Microsoft.Toolkit.Mvvm`) WPF Sample 1 - calc
+`MVVM` (`CommunityToolkit.Mvvm`) WPF Sample 1 - calc
 
 Calculator Application
 

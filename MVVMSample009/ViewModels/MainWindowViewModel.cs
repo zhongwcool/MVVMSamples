@@ -1,6 +1,6 @@
-﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using MVVMSample009.Models;
-using IOC = Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc;
+using IOC = CommunityToolkit.Mvvm.DependencyInjection.Ioc;
 
 namespace MVVMSample009.ViewModels;
 

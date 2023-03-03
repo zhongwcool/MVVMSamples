@@ -1,6 +1,6 @@
 # MVVMSample011
 
-`MVVM Toolkit` (`Microsoft.Toolkit.Mvvm`) WPF Sample 11 - page transition
+`MVVM` (`CommunityToolkit.Mvvm`) WPF Sample 11 - page transition
 
 ![01](https://user-images.githubusercontent.com/81235941/122909269-fcccdb00-d38f-11eb-948c-532939df1901.png)
 

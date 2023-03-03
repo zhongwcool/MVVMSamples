@@ -1,6 +1,6 @@
 # MVVMSample010
 
-`MVVM Toolkit` (`Microsoft.Toolkit.Mvvm`) WPF Sample 10 - Event
+`MVVM` (`CommunityToolkit.Mvvm`) WPF Sample 10 - Event
 
 Event processing sample.
 

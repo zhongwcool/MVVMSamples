@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using MVVMSample009.Models;
-using IOC = Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc;
+using IOC = CommunityToolkit.Mvvm.DependencyInjection.Ioc;
 
 namespace MVVMSample009;
 

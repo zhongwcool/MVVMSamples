@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.Toolkit.Mvvm.ComponentModel;
-using Microsoft.Toolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using MVVMSample007.Models;
 
 namespace MVVMSample007.ViewModels;

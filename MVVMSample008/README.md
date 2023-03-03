@@ -1,6 +1,6 @@
 # MVVMSample008
 
-`MVVM Toolkit` (`Microsoft.Toolkit.Mvvm`) WPF Sample 8 - validation (1)
+`MVVM` (`CommunityToolkit.Mvvm`) WPF Sample 8 - validation (1)
 
 Validation sample.
 
