@@ -1,19 +1,22 @@
-﻿using System.Windows;
+﻿using CommunityToolkit.Mvvm.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using MVVMSample009.Models;
-using IOC = CommunityToolkit.Mvvm.DependencyInjection.Ioc;
+using MVVMSample009.Services;
 
 namespace MVVMSample009;
 
 /// <summary>
 ///     Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
+public partial class App
 {
     public App()
     {
-        IOC.Default.ConfigureServices(
-            new ServiceCollection().AddSingleton<IFoo, Foo>().BuildServiceProvider()
+        Ioc.Default.ConfigureServices(
+            new ServiceCollection()
+                .AddSingleton<IFoo, Foo>()
+                .AddSingleton<IUserDialogService, UserDialogService>()
+                .BuildServiceProvider()
         );
 
         //IServiceCollection sc = new ServiceCollection();

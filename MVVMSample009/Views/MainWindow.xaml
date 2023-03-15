@@ -6,11 +6,31 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:vm="clr-namespace:MVVMSample009.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Width="400" Height="250"
+        Title="MainWindow" Width="600" Height="450"
         d:DataContext="{d:DesignInstance vm:MainWindowViewModel}"
         ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip">
-    <Viewbox>
-        <TextBlock Text="{Binding Text1}" />
-    </Viewbox>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Width="200" Orientation="Vertical">
+            <Button Command="{Binding NewUserCommand}">添加</Button>
+            <ListBox ItemsSource="{Binding Users}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="40">
+                            <TextBlock Text="{Binding Name}" FontSize="14" VerticalAlignment="Top" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Age, StringFormat='I am {0} years old'}" FontSize="11" Margin="0,19,0,0" VerticalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+            
+        <Viewbox Grid.Column="1">
+            <TextBlock Text="{Binding Text1}" />
+        </Viewbox>
+    </Grid>
 </Window>

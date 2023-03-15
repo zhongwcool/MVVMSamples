@@ -12,6 +12,24 @@
                 <!--  Other merged dictionaries here  -->
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
+            <ControlTemplate x:Key="ValidationTemplate1">
+                <StackPanel>
+                    <Grid>
+                        <AdornedElementPlaceholder x:Name="adornedElem" />
+                    </Grid>
+
+                    <ItemsControl
+                        ItemsSource="{Binding ElementName=adornedElem, Path=AdornedElement.TemplatedParent.(Validation.Errors)}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Foreground="Red" Text="{Binding ErrorContent}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ControlTemplate>
         </ResourceDictionary>
 
     </Application.Resources>
