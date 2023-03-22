@@ -27,6 +27,9 @@ public class MainWindowViewModel : ObservableValidator
 
     private string _note;
 
+    [RegularExpression("^[\\w-]+@[\\w-]+\\.(com|net|org|edu|mil|tv|biz|info)$", ErrorMessage = "邮箱格式不正确")]
+    [Required(ErrorMessage = "不能为空")]
+    [DataType(DataType.EmailAddress)]
     public string Note
     {
         get => _note;

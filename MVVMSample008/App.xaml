@@ -16,12 +16,6 @@
                 <Setter Property="Margin" Value="10,10,10,0" />
             </Style>
 
-            <Style x:Key="ErrorSymbolStyle" TargetType="ui:SymbolIcon">
-                <Setter Property="HorizontalAlignment" Value="Left" />
-                <Setter Property="Foreground" Value="Red" />
-                <Setter Property="Symbol" Value="ReportHacked" />
-            </Style>
-
             <BooleanToVisibilityConverter x:Key="BoolToVisibleConv" />
 
             <ControlTemplate x:Key="ValidationTemplate1">
@@ -35,7 +29,6 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <ui:SymbolIcon Margin="0,0,5,0" Style="{StaticResource ErrorSymbolStyle}" />
                                     <TextBlock Foreground="Red" Text="{Binding ErrorContent}" />
                                 </StackPanel>
                             </DataTemplate>

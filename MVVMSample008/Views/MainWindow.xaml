@@ -32,8 +32,9 @@
                 SpinButtonPlacementMode="Inline"
                 Value="{Binding Age}" />
 
-            <TextBlock Style="{StaticResource ItemLabelStyle}" Text="Note" />
-            <TextBox Margin="10,0,10,15" Text="{Binding Note}" />
+            <TextBlock Style="{StaticResource ItemLabelStyle}" Text="邮箱" />
+            <TextBox Margin="10,0,10,15" Text="{Binding Note}"
+                     Validation.ErrorTemplate="{StaticResource ValidationTemplate1}"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal">
